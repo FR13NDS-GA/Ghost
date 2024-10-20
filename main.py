@@ -83,18 +83,18 @@ if choice == choice1:
       print(Fore.YELLOW + "Domain Information\n" + Fore.WHITE)
       domain = input("Enter the domain name: ")
       print(Fore.CYAN + "Running domain information tools...\n" + Fore.WHITE)
-      subprocess.run(f"sh $HOME/Documents/Ghost/main.sh {domain} 1", shell=True)
+      subprocess.run(f"sh /root/Documents/Ghost/main.sh {domain} 1", shell=True)
 
       # Nmap
       print(Fore.CYAN + "Running Nmap...\n" + Fore.WHITE)
-      subprocess.run(f"sh $HOME/Documents/Ghost/nmap.sh {domain}", shell=True)
+      subprocess.run(f"sh /root/Documents/Ghost/nmap.sh {domain}", shell=True)
 
 # Social Media Information
 if choice == choice2:
       print(Fore.YELLOW + "Social Media Information\n" + Fore.WHITE)
       user = input("Enter the user: ")
       print(Fore.CYAN + "Hunting down social media accounts...\n" + Fore.WHITE)
-      subprocess.run(f"sh $HOME/Documents/Ghost/person_info.sh {user}", shell=True)
+      subprocess.run(f"sh /root/Documents/Ghost/person_info.sh {user}", shell=True)
 
 # IP Address Information
 if choice == choice3:
@@ -103,7 +103,7 @@ if choice == choice3:
       print(Fore.CYAN + "Gathering information...\n" + Fore.WHITE)
 
       #IP info
-      subprocess.run(f"sh $HOME/Documents/Ghost/ip_lookup.sh {ip}", shell=True)
+      subprocess.run(f"sh /root/Documents/Ghost/ip_lookup.sh {ip}", shell=True)
 
 # Email Address Information
 if choice == choice4:
@@ -112,7 +112,7 @@ if choice == choice4:
       print(Fore.CYAN + "Gathering information...\n" + Fore.WHITE)
 
       #IP info
-      subprocess.run(f"sh $HOME/Documents/Ghost/email_info.sh {email}", shell=True)
+      subprocess.run(f"sh /root/Documents/Ghost/email_info.sh {email}", shell=True)
 
 #Exit
 #about
